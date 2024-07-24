@@ -1,0 +1,31 @@
+#add two numbers
+
+def add(a,b):
+    return a+b
+#sub two numbers
+def sub(a,b):
+    return a-b
+#mul two numbers
+def mul(a,b):
+    return a*b
+#div two numbers
+def div(a,b):
+    return a/b
+print("""select the operation
+1)add
+2)sub
+3)mul
+4)div""")
+choice=int(input("Enter your choice:"))
+a=int(input("Enter the Number1:"))
+b=int(input("Enter the Number2:"))
+if choice==1:
+    print(add(a,b))
+elif choice==2:
+    print(sub(a,b))
+elif choice==3:
+    print(mul(a,b))
+elif choice==4:
+    print(div(a,b))
+else:
+    print("Enter the correct choice:")
